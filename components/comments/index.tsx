@@ -1,6 +1,6 @@
 import { useIsThreadActive } from '@liveblocks/react-lexical'
 import { Composer, Thread } from '@liveblocks/react-ui'
-import { useThreads } from '@liveblocks/react/suspense'
+import { useThreads as UseThreads} from '@liveblocks/react/suspense'
 import React from 'react'
 import { cn } from '@/lib/utils'
 
@@ -21,7 +21,7 @@ const ThreadWrapper = ({thread}: ThreadWrapperProps) => {
 }
 
 const index = () => {
-    const {threads} = useThreads();
+    const {threads} = UseThreads()
 
   return (
     <div className='mb-10 space-y-4 lg:w-fit flex w-full flex-col items-center justify-center'>
