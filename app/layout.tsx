@@ -13,7 +13,7 @@ const fontSans = FontSans({
 })
 
 export const metadata:Metadata = {
-  title: "Live Docs",
+  title: "Doc Share",
   description: "Your go-to collaborative editor."
 }
 
